@@ -1,7 +1,12 @@
-var express = require('express');
-var router = express.Router();
+// Use const for things that won't chnage
+const express = require('express');
+const router = express.Router();
 
-const ctrlMain = require('../controllers/main');
+// Controllers
+const ctrlLocations = require('../controllers/locations');
+const ctrlOthers = require('../controllers/others');
+
+// const ctrlMain = require('../controllers/main');
 
 // const homepageController = (req, res) => { // Created named function
 
@@ -14,7 +19,14 @@ const ctrlMain = require('../controllers/main');
 //   res.render('index', { title: 'Express' });
 // });
 
-router.get('/', ctrlMain.index );
+// Locations Pages , define routes & map to controller functions
+router.get('/', ctrlLocations.homeList);
+router.get('/location', ctrlLocations.locationInfo);
+router.get('/location/review/new', ctrlLocations.addReview);
 
+// Others Pages
+router.get('/about', ctrlOthers.about);
+
+// router.get('/', ctrlMain.index );
 
 module.exports = router;

@@ -7,7 +7,23 @@ html
     link(rel='stylesheet', href='/stylesheets/all.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.fixed-top.navbar-expand-md.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='/') Loc8r 
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', 
+          data-bs-target='#navbarMain')
+          span.navbar-toggler-icon
+      #navbarMain.navbar-collapse.collapse
+        ul.navbar-nav.mr-auto 
+          li.nav-item 
+            a.nav-link(href='/about/') About
+    .container
+      block content
+
+      footer
+        .row
+          .col-12   
+            small &copy; Loc8r App Project - Venzo
     script(src='https://unpkg.com/@popperjs/core@2')
     script(src='/javascripts/jquery.min.js')
     script(src='/javascripts/bootstrap.min.js')
