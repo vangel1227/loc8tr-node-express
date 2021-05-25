@@ -5,8 +5,7 @@ const about = (req, res) => { // Created named function
     res.render('generic-text', { 
         title: 'Loc8r | About',
         pageHeader: {title: "Review Starcups"}, 
-        content: "Loc8r was created to help people fin places to sit down and get a bit of work done."
-   
+        content: "Loc8r was created to help people find places to sit down and get a bit of work done."
     });
   };
 

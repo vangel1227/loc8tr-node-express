@@ -7,9 +7,9 @@ const homeList = (req, res) => { // Created named function
       title: 'Loc8r | Home',
       pageHeader: {
         title: "Loc8r",
-        strapline: "Find places to work with wifi near you!"
+        strapline: "Find places to work with Wi-Fi near you!"
       },
-      sidebar: "Looking for wifi with a seat? Loc8r helps find places to work when out and about. Work when out and about.Get some cofee, cake, or even a pint. Let Loc8r help find the place you're looking for.",
+      sidebar: "Looking for Wi-Fi with a seat? Loc8r helps find places to work when out and about. Work when out and about. Get some coffee, cake, or even a pint. Let Loc8r help find the place you're looking for.",
       locations: [
         {
           name: "Starcups",
@@ -46,14 +46,14 @@ const locationInfo = (req, res) => { // Created named function
         strapline: "Find places to work with wifi near you!"
       },
       sidebar: {
-        context: "Looking for wifi with a seat? Loc8r helps find places to work when out and about. Work when out and about.Get some cofee, cake, or even a pint. Let Loc8r help find the place you're looking for.",
+        context: ", looking for Wi-Fi with a seat? Loc8r helps find places to work when out and about. Work when out and about. Get some coffee, cake, or even a pint. Let Loc8r help find the place you're looking for.",
         callToAction: "If you've been and you like it - or if you didn't - please leave a review to help other people just like you. This is just a static Node & Express project. All shop links lead to Starcups. Creation of new pages and adjustments to controllers and routing would have to be made."
       },
       location: {
           name: "Starcups",
           address: "125 High Street, Reading, RG6 1PS",
           rating: 3,
-          facilities: ["Hot Drinks", "Food", "Premium Wifi"],
+          facilities: ["Hot Drinks", "Food", "Premium Wi-Fi"],
           distance: "100m",
           openingTimes: [{
             days: "Monday - Friday",
